@@ -27,7 +27,7 @@ var drano = function(){
 var root = "../../";
 
 var css = {
-    src: root + "styles/scss/*.scss",
+    src: root + "styles/scss/bummercity.scss",
     watch: root + "styles/scss/**/**/*.scss",
     dest: root + "styles/css/"
 };

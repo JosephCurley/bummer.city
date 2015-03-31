@@ -1,6 +1,12 @@
+//Depetendencies
 @import "bourbon";
 @import "neat";
 
-*{
-	box-sizing: border-box;
-}
+
+@import "colors";
+@import "typography";
+@import "general";
+
+@import "pages/home";
+
+

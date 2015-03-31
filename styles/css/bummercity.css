@@ -4,5 +4,124 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-* {
-  box-sizing: border-box; }
+@font-face {
+  font-family: "alternative";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/guilder-alternative-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/guilder-alternative-webfont.woff") format("woff"), url("/fonts/guilder-alternative-webfont.ttf") format("truetype"), url("/fonts/guilder-alternative-webfont.svg#alternative") format("svg"); }
+
+@font-face {
+  font-family: "guilder";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/guilder-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/guilder-webfont.woff") format("woff"), url("/fonts/guilder-webfont.ttf") format("truetype"); }
+
+body {
+  font-family: "guilder", Helvetica, Arial;
+  font-size: 48px; }
+  @media screen and (max-width: 1080px)  {
+    body {
+      font-size: 40px; } }
+  @media screen and (max-width: 900px)  {
+    body {
+      font-size: 32px; } }
+
+h1 {
+  font-family: "alternative", Helvetica, Arial;
+  font-size: 4em;
+  line-height: 1em;
+  margin: 0; }
+  @media screen and (max-width: 700px)  {
+    h1 {
+      font-size: 3em;
+      font-family: "guilder", Helvetica, Arial; } }
+  @media screen and (max-width: 530px)  {
+    h1 {
+      font-size: 2em; } }
+  @media screen and (max-width: 320px)  {
+    h1 {
+      font-size: 1em; } }
+
+h1, h2, h3, h4 {
+  font-weight: normal; }
+
+p {
+  margin: .3em 0; }
+
+.title {
+  color: #E85005; }
+
+a, a:hover, a:active {
+  text-decoration: none;
+  color: #1D1F21; }
+
+body {
+  padding: 0 20px; }
+
+header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-bottom: double 15px #1D1F21; }
+  header:last-child {
+    margin-right: 0; }
+  header::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.break:before {
+  content: ' t ';
+  font-size: .6em;
+  margin: 0 .4em;
+  vertical-align: middle;
+  color: #E85005;
+  display: inline-block;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.about-me {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .about-me:last-child {
+    margin-right: 0; }
+
+.about-me__real-talk {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto; }
+
+.about-me__client-talk {
+  max-width: 50%;
+  width: 100%;
+  margin: 60px auto 0; }
+  @media screen and (max-width: 500px)  {
+    .about-me__client-talk {
+      max-width: 80%; } }
+
+.client-list {
+  margin-top: 0;
+  padding-left: 0; }
+  .client-list li {
+    list-style: none;
+    display: inline;
+    white-space: nowrap; }
+    .client-list li:after {
+      content: ' t ';
+      font-size: .6em;
+      margin: 0 .4em;
+      vertical-align: middle;
+      color: #E85005;
+      display: inline-block;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .client-list li:hover {
+      color: #E85005;
+      border-bottom: 1px solid #E85005; }

@@ -1,0 +1,38 @@
+.about-me{
+	@include span-columns(12 of 12);
+}
+.about-me__real-talk, {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+.about-me__client-talk{
+	max-width: 50%;
+	width: 100%;
+	margin: 60px auto 0;
+	@include media(max-width 500px){
+		max-width: 80%;
+	}
+}
+.client-list{
+	margin-top: 0;
+	padding-left: 0;
+	li{
+		list-style: none;
+		display: inline;
+		white-space: nowrap;
+		&:after{
+			content: ' t ';
+			font-size: .6em;
+			margin: 0 .4em;
+			vertical-align: middle;
+			color: $action;
+			display: inline-block;
+			transform: rotate(180deg);
+		}
+		&:hover{
+			color: $action;
+			border-bottom: 1px solid $action;
+		}
+	}
+}
