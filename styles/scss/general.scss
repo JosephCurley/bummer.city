@@ -10,7 +10,6 @@ header{
 	@include span-columns(12 of 12);
 	@include row();
 	text-align: center;
-	border-bottom: double 15px $black;
 }
 
 .break:before{
