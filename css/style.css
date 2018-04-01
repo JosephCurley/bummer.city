@@ -2,12 +2,12 @@
   box-sizing: border-box; }
 
 body,
-ul,
-li,
-p,
 h1,
 h2,
-h3 {
+h3,
+li,
+p,
+ul {
   margin: 0;
   padding: 0; }
 
@@ -20,8 +20,8 @@ a {
   a:hover {
     color: #782248; }
 
-ul,
-li {
+li,
+ul {
   list-style: none; }
 
 img {
@@ -32,7 +32,10 @@ img {
   font-size: 0;
   margin: 0 auto;
   max-width: 800px;
-  padding: 20px; }
+  padding: 10px 20px 0; }
+  @media screen and (min-width: 500px) {
+    .site-wrapper {
+      padding: 80px 20px 0; } }
 
 .site-link {
   display: block;
@@ -44,34 +47,42 @@ img {
     .site-link.current:hover {
       color: #1c1c1c; }
 
-.site-nav,
-.site-main {
-  letter-spacing: 0.14em;
-  line-height: 2em;
+.site-main,
+.site-nav {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 2;
   vertical-align: top; }
 
 .site-main {
-  width: calc(100% - 200px); }
-  @media screen and (max-width: 500px) {
+  width: 100%; }
+  @media screen and (min-width: 500px) {
     .site-main {
-      display: block;
-      width: 100%; } }
+      display: inline-block;
+      padding-left: 20px;
+      width: calc(100% - 200px); } }
   .site-main a {
     text-decoration: none;
     color: #782248; }
+  .site-main p {
+    margin-bottom: 20px; }
 
 .site-nav {
-  width: 200px; }
-  @media screen and (max-width: 500px) {
+  letter-spacing: 0.14em;
+  margin-bottom: 20px;
+  width: 100%; }
+  @media screen and (min-width: 500px) {
     .site-nav {
-      display: block;
-      width: 100%;
-      margin-bottom: 20px; } }
+      display: inline-block;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 20px;
+      width: 200px; } }
 
 .site-footer {
-  padding: 20px; }
+  font-size: 1rem;
+  padding: 20px 0;
+  text-align: right; }
 
 .photo-series {
   margin-top: 30px; }
@@ -86,9 +97,6 @@ img {
   filter: grayscale(75%);
   margin-top: 20px; }
 
-.image-container {
-  margin-left: 50px; }
-  .image-container img {
-    -webkit-filter: grayscale(50%); }
-    .image-container img:hover {
-      -webkit-filter: none; }
+@media screen and (min-width: 500px) {
+  .image-container {
+    margin-left: 20px; } }

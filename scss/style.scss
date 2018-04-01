@@ -1,37 +1,39 @@
 $text-color: rgba(28, 28, 28, 1);
 $accent-color: rgb(120, 34, 72);
 
-*{
+* {
 	box-sizing: border-box;
 }
 
 body,
-ul,
-li,
-p,
 h1,
 h2,
-h3 {
+h3,
+li,
+p,
+ul {
 	margin: 0;
 	padding: 0;
 }
 
-body{
+body {
 	color: $text-color;
 	font-family: 'Open Sans', sans-serif;
 }
 
-a{
+a {
 	color: $text-color;
+
 	&:hover {
 		color: $accent-color;
 	}
 }
 
-ul,
-li {
+li,
+ul {
 	list-style: none;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -41,7 +43,10 @@ img {
 	font-size: 0;
 	margin: 0 auto;
 	max-width: 800px;
-	padding: 20px;
+	padding: 10px 20px 0;
+	@media screen and (min-width: 500px) {
+		padding: 80px 20px 0;
+	}
 }
 
 .site-link {
@@ -52,45 +57,58 @@ img {
 	&.current {
 		text-decoration: line-through;
 		cursor: default;
+
 		&:hover {
 			color: $text-color;
 		}
 	}
 }
-.site-nav,
-.site-main {
-	letter-spacing: 0.14em;
-	line-height: 2em;
+
+.site-main,
+.site-nav {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 2;
 	vertical-align: top;
 }
 
 .site-main {
-	width: calc(100% - 200px);
-	@media screen and (max-width: 500px) {
-		display: block;
-		width: 100%;
+	width: 100%;
+	@media screen and (min-width: 500px) {
+		display: inline-block;
+		padding-left: 20px;
+		width: calc(100% - 200px);
 	}
+
 	a {
 		text-decoration: none;
 		color: $accent-color;
 	}
+
+	p {
+		margin-bottom: 20px;
+	}
 }
 
 .site-nav {
-	width: 200px;
-	@media screen and (max-width: 500px) {
-		display: block;
-		width: 100%;
-		margin-bottom: 20px;
+	letter-spacing: 0.14em;
+	margin-bottom: 20px;
+	width: 100%;
+	@media screen and (min-width: 500px) {
+		display: inline-block;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 20px;
+		width: 200px;
 	}
-
 }
 
-.site-footer{
-	padding: 20px;
+.site-footer {
+	font-size: 1rem;
+	padding: 20px 0;
+	text-align: right;
 }
+
 .photo-series {
 	margin-top: 30px;
 }
@@ -102,18 +120,13 @@ img {
 	margin-bottom: 20px;
 }
 
-.homepage-image{
+.homepage-image {
 	filter: grayscale(75%);
 	margin-top: 20px;
 }
 
 .image-container {
-	margin-left: 50px;
-
-	img {
-		-webkit-filter: grayscale(50%);
-		&:hover {
-			-webkit-filter: none;
-		}
+	@media screen and (min-width: 500px) {
+		margin-left: 20px;
 	}
 }
