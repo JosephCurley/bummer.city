@@ -1,2 +1,0 @@
-# simpledemo
-A code sample

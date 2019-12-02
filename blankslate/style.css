@@ -1,3 +1,19 @@
+/*
+Theme Name: Bummer.city
+Theme URI: https://github.com/soyburgers/bummer.city
+Author: Joseph Curley
+Author URI: http://bummer.city/
+Description: Based off Blankslate - just a theme for my personal site.
+Version: 1.0
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: personal.
+Text Domain:
+*/
+
+/* html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important} */
+
 * {
   box-sizing: border-box; }
 
@@ -37,16 +53,20 @@ img {
     .site-wrapper {
       padding: 80px 20px 0; } }
 
-.site-link {
+.page_item a{
   display: block;
   margin-bottom: 10px;
   padding: 0 5px;
   text-decoration: none; }
-  .site-link.current {
+  .current_page_item a {
     text-decoration: line-through;
     cursor: default; }
-    .site-link.current:hover {
+    .current_page_item a:hover {
       color: #1c1c1c; }
+
+.page_item .children {
+	display: none;
+}
 
 .site-link--store {
   color: white;
@@ -67,11 +87,6 @@ img {
     transform: rotateX(93deg);
     transform-origin: bottom; }
 
-@keyframes linkAnimation {
-  from {
-    color: red; }
-  to {
-    color: yellow; } }
 
 .site-main,
 .site-nav {
@@ -118,6 +133,10 @@ img {
   letter-spacing: 0.1em;
   font-weight: normal;
   margin-bottom: 20px; }
+
+.image-container a{
+	margin-bottom: 20px;
+}
 
 @media screen and (min-width: 500px) {
   .image-container {

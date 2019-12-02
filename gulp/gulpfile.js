@@ -1,10 +1,10 @@
 'use strict';
-//Extremly basic gulp file. Just complies my SASS.
-
-const gulp = require('gulp');
-const sass = require('gulp-sass');
+//CSS and JS compilers
+const gulp  = require('gulp');
+const sass  = require('gulp-sass');
 
 const scssPath = "../scss/**/*.scss";
+
 const cssDest = "../css";
 
 gulp.task("sass", function () {
